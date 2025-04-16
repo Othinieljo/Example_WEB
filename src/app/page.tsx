@@ -539,7 +539,9 @@ Merci d’être toi.
             alt="Ivana" 
             className="w-64 h-64 object-cover object-center"
             onError={(e) => {
+              // @ts-ignore
               e.target.style.display = 'none';
+              // @ts-ignore
               document.getElementById('placeholder-text').style.display = 'block';
             }}
           />
