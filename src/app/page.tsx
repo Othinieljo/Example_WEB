@@ -425,7 +425,9 @@ export default function Home() {
                   alt={`Photo ${spot.id}`} 
                   className="w-full h-full object-cover object-center"
                   onError={(e) => {
+                    // @ts-ignore
                     e.target.style.display = 'none';
+                    // @ts-ignore
                     e.target.nextElementSibling.style.display = 'block';
                   }}
                 />
